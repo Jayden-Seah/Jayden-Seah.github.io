@@ -36,6 +36,7 @@ gamebtn.addEventListener("click", function(){
 	show(5);
 });
 hideall();
+show(1);
 
 
 //Start code:
