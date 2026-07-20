@@ -1,34 +1,87 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PC building support</title>
+		<title>Guide to PC building</title><!--Title for the tab/name for the tab-->
+		<!--Link files-->
 		<link href="css/style.css" type = "text/css" rel = "stylesheet">
+		<script src="script.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+	
 	<body>
-		<header>
+	
+		<header><!--Try and make it look nicer-->
+			<h1>PC building</h1>
 		</header>
-		<nav>
+		
+		<nav><!--Figure out a way to make it interactive in JS-->
 			<ul>
-				<li><button id = "page1btn">SubTopic1</button></li>
-				<li><button id = "page2btn">Subtopic2</button></li>
-				<li><button id = "page3btn">Subtopic3</button></li>
-				<li><button id = "page4btn">GamePage</button></li>
+			<!--image here-->
+				<li><button id = "homebtn">Home</button></li>
+				<li><button id = "page1btn">PC parts explained</button></li>
+				<li><button id = "page2btn">How to build your own PC</button></li>
+				<li><button id = "page3btn">Tips</button></li>
+				<li><button id = "page4btn">Try the game!</button></li>
 			</ul>
 		</nav>
+		
 		<main>
-			<section class = "page" id= "page1">
-				How to Build your own PC
+		<!--Part 1-->
+			<section id = "page1"><!--Need to create a function in js to show this in the main page and then when buttons are pressed, hide it and only reveal it again after -->
+				<h1>What Started PC building?</h1>
+				<h2>History of PC building</h2>
+				<p>1950s–1960s: The Beginning
+					The earliest computers were large, expensive machines built for scientific research and military use. Games such as Nimrod, Tennis for Two, and Spacewar! demonstrated that computers could also provide interactive entertainment, laying the foundation for video gaming.</p>
+				<p>1970s: Home Computers Arrive
+					The invention of the microprocessor made personal computers possible. Systems like the Apple II, Commodore PET, and TRS-80 introduced gaming to homes. Later, the Commodore 64 became one of the best-selling computers ever, offering improved graphics, sound, and a massive game library. </p>
+				<p>1980s: The Rise of the IBM PC
+					The launch of the IBM PC established the standard for modern personal computers. Graphics improved from CGA to VGA, while sound cards such as the Sound Blaster enhanced the gaming experience. Developers created increasingly advanced games, making PCs a serious gaming platform.</p>
+				<p>1990s: The 3D Revolution
+					The 1990s transformed PC gaming with the introduction of 3D graphics and internet connectivity. Games like Wolfenstein 3D, Doom, and Quake popularized first-person shooters and multiplayer gaming. Graphics cards such as the 3dfx Voodoo and NVIDIA GeForce 256 greatly improved visual performance and helped establish the modern GPU.</p>
+				<p>2000s: Online Gaming Boom
+					Broadband internet changed how people played games. Online titles such as World of Warcraft attracted millions of players, while platforms like Steam made downloading games more convenient than buying physical copies. Multi-core processors, larger storage drives, and better cooling systems also became common in gaming PCs.</p>
+				<p>Modern Gaming PCs
+					Today's gaming PCs feature powerful multi-core CPUs, high-performance GPUs, SSDs, advanced cooling solutions, and AI-powered technologies. These systems support realistic graphics, high frame rates, esports, game streaming, and content creation, making them more versatile than ever.</p>
 			</section>
+		<!--Part 2-->
 			<section class = "page" id= "page2">
-				
+				<h1>PC parts Explained</h1>
+				<p>CPU: Processes instructions and runs programs</p>
+				<p>GPU: Renders graphics and improves gaming performance</p>
+				<p>Motherboard: Connects all components together</p>
+				<p>RAM: Stores temporary data for fast access</p>
+				<p>PSU(power supply unit): Supplies power to all components</p>
+				<p>SSD/HDD(storage): Stores the operating system, games and files</p>
+				<p>CPU cooler: Keeps CPU cool</p>
+				<p>PC case: Protects components and provides airflow</p>
+				<p>Case Fans: Improves cooling and airflow</p>
+				<p>Network Adapter: Connects the PC to the internet</p>
+				<p>Operating System: Runs the computer and applications</p>
 			</section>
+		<!--Part 3-->
 			<section class = "page" id= "page3">
-				What Websites are useful to make your own PC(Mainly for reference)
+				<h1>How to Build your own PC</h1>
+				<p> All the parts of a PC: CPU, GPU, Motherboard , RAM , SSD , PSU </p>
+				<p>Step 1: (Prep) Gather all your PC components and tools and work on a clean, static-free surface.</p>
+				<p>Step 2: (CPU) Carefully place the CPU into the motherboard socket, ensuring the alignment markers match</p>
+				<p>Step 3: (RAM) Insert the RAM sticks into the correct motherboard slots until they click into place.</p>
+				<p>Step 4: (SSD) Attach the SSD/other storage device to the motherboard or drivebay.</p>
+				<p>Step 5: (CPU cooler) Apply thermal paste if needed, then secure the CPU cooler to keep the processor at a safe temperature.</p>
+				<p>Step 6: (Motherboard) Place the motherboard into the PC case and secure it using the provided screws.</p>
+				<p>Step 7: (PSU) Fit the PSU into the case and connect the required power cables</p>
+				<p>Step 8: (GPU) Insert the GPU into te PCIe slot on the motherboard and secure it to the case</p>
+				<p>Step 9: (Connect all cables) Connect the power cables, front panel connectors , storage cables, and case fans according to the motherboard manual.</p>
+				<p>Step 10: (Power On and Install OS) Turn on PC to ensure everything works correctly , then install an operating system(OS) such as windows and update the neccessary drivers</p>
 			</section>
-			<section class = "page" id = "page4">
-				game
+		<!--Part 4-->
+			<section class = "page" id= "page4">
+				<h1>What Websites are useful to make your own PC(Mainly for reference)/Tips</h1>
 			</section>
+		<!--Part 5 -->	
+			<section class = "page" id = "page5"><!--Need to create the button function -->
+				<h1>game</h1>
+			</section>
+			
 		</main>
 	</body>
 </html>
