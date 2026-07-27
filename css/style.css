@@ -1,11 +1,8 @@
 /*Page colors*/
-
 nav ul li{display:inline;}
 #page1{background:#222A35;color:#F8FAFC}
-#page2{background:#222A35}
-#page3{background:#222A35}
-#page4{background:#222A35}
-#page5{background:#222A35}
+#page2,#page4,#page5{background:#222A35}
+#page6{background:#222A35;width:80vw;height:80vh}
 
 /*CSS for responsive menu*/
 #hamIcon{display:none;}
@@ -24,7 +21,6 @@ nav ul li{display:inline;}
 .menuShow{display:block;} 
 
 
-
 /*background image*/
 body{ /*Global Settings*/
 	background-image: url("../images/backgroundPC.png");
@@ -35,12 +31,39 @@ body{ /*Global Settings*/
 }
 
 /*Title*/
-header h1{background:#222A35}
+header h1{background:#222A35;text-align:center}
+header img{width:5vw;height:auto;margin:0.1em}
+header p{font-size:1rem;font-weight:normal;text-align:center;margin:0.1em}
 
 /*Header box*/
-header{text-align:center;}
+
 
 /*Navigation box/section*/
-nav{background:#222A35;height:auto;padding:0.5em;}
+nav{background:#161B22;height:auto;padding:0.5em;text-align:center;}
+nav li button{background:#2F6BFF;border-radius:1em;height:2.5em;transition: transform 0.3s ease;}
+nav li button:hover{background:#1FB6FF;transform: scale(1.1);}
+
+/*FoR All Pages*/
+section.page{padding:2em}
 
 
+/*HOME PAGE*/
+section#page1 h1{text-align:center;}
+
+.sub1 , .sub2, .sub3, .sub4, .sub5, .sub6{background:#2D3748;margin:1em;}
+
+/*PC parts explained Page*/
+.list1{background:#2D3748;margin:1em;}
+
+/*How to build page */
+
+/*Tips*/
+/*Tips-  make the button nicer*/
+.tipsbtn{background:#2F6BFF;border-radius:1em;}
+.tipsbtn:hover{background:#1FB6FF;}
+
+/*Game Page*/
+
+/*Image: */
+#dustId{position: relative;width:10vw}
+.dustEnemy{width:100%;height:auto;}
