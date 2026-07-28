@@ -6,7 +6,7 @@ nav ul li{display:inline;}
 
 /*CSS for responsive menu*/
 #hamIcon{display:none;}
-@media screen and (max-width:800px){
+@media screen and (max-width:1000px){
 /*make a menu items vertical*/
  nav ul li{display:block;}
  
