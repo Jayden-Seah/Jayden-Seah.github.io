@@ -1,69 +1,121 @@
 /*Page colors*/
 nav ul li{display:inline;}
-#page1{background:#222A35;color:#F8FAFC}
+#page1{background:#222A35}
 #page2,#page4,#page5{background:#222A35}
-#page6{background:#222A35;width:80vw;height:80vh}
+#page6{background:#222A35;}
 
-/*CSS for responsive menu*/
-#hamIcon{display:none;}
-@media screen and (max-width:1000px){
-/*make a menu items vertical*/
- nav ul li{display:block;}
- 
-/* unhide menu icon */
- #hamIcon{display:block;} 
-
-/*hide the menu item list*/
- nav ul{display:none;} 
-}
-
-/*to unhide menu items*/
-.menuShow{display:block;} 
-
-
-/*background image*/
-body{ /*Global Settings*/
-	background-image: url("../images/backgroundPC.png");
+/*Global Settings*/
+body{
+	background-image: url("../images/backgroundPC.png");/*background image*/
 	background-size:cover;
 	background-position:center;
+	
+	font-family:"Arial" ,sans-serif;
 	
 	color:#F8FAFC;
 }
 
-/*Title*/
-header h1{background:#222A35;text-align:center}
+/*Desktop RWD*/
+
+/*Header*/
+header {background:#222A35;text-align:center}
 header img{width:5vw;height:auto;margin:0.1em}
-header p{font-size:1rem;font-weight:normal;text-align:center;margin:0.1em}
+header p{font-size:1rem;font-weight:normal;text-align:center;margin:0.5em}
 
-/*Header box*/
-
-
-/*Navigation box/section*/
+/*Navigational Box*/
 nav{background:#161B22;height:auto;padding:0.5em;text-align:center;}
-nav li button{background:#2F6BFF;border-radius:1em;height:2.5em;transition: transform 0.3s ease;}
+nav li button{background:#2F6BFF;border-radius:1em;height:2.5em;transition: transform 0.3s ease;}/*Transition*/
 nav li button:hover{background:#1FB6FF;transform: scale(1.1);}
 
 /*FoR All Pages*/
-section.page{padding:2em}
-
+section.page{padding:2em;font-size:1em}
 
 /*HOME PAGE*/
-section#page1 h1{text-align:center;}
-
-.sub1 , .sub2, .sub3, .sub4, .sub5, .sub6{background:#2D3748;margin:1em;}
+section.page h2{text-align:center;}
 
 /*PC parts explained Page*/
-.list1{background:#2D3748;margin:1em;}
+.list1{margin:1em;}
 
-/*How to build page */
+/*How to build your own PC page*/
+section#page3{background:#222A35}
 
 /*Tips*/
-/*Tips-  make the button nicer*/
-.tipsbtn{background:#2F6BFF;border-radius:1em;}
-.tipsbtn:hover{background:#1FB6FF;}
+.tipsbtn{background:#2F6BFF;border-radius:1em;transition: transform 0.3s ease;} /*Tipsbtn*/
+.tipsbtn:hover{background:#1FB6FF;transform: scale(1.1);}
 
-/*Game Page*/
 
-/*Image: */
-#dustId{position: relative;width:10vw}
+
+/*GamePage*/
+/*position:relative helps the dust to move better*/
+#dustId , #dust2Id , #dust3Id{position: relative;width:6vw;}/*GameCharacter*/
+
 .dustEnemy{width:100%;height:auto;}
+
+.GameborderBox{
+	width:80%;
+	max-width:1000px;
+	height:80%;
+	max-height:800px;
+	background-image:url("../images/gameBG.png");
+	background-size:cover;
+	background-position:center;
+	aspect-ratio:5/4;/*Must to have to ensure that the game border box is the perfect size for the desktop and for the phone respectively*/
+	border:10px solid white;
+	margin:auto;
+	border-radius:1em;
+}
+
+/*Quiz*/
+fieldset{background:#2E3848;text-align:center;/*Remove the white border*/ border:none}
+fieldset legend{font-size:1.3em;}
+fieldset label{transition:0.3s}
+fieldset label:hover{background:#2856CC;transform:scale(1.02);}
+
+/*Button deco*/
+.button{background:#2F6BFF;border-radius:1em;transition: transform 0.3s ease;}
+.button:hover{background:#1FB6FF;transform: scale(1.1);}
+
+/*Dust animation*/
+@keyframes animate{
+	0%{
+		transform:scale(1);
+	}
+	50%{
+		transform:scale(1.4);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+
+.animate{
+	animation:animate 0.5s;
+}
+
+/*Footer*/
+footer{background:#222A35;font-size:0.5em;margin:0.5em}
+footer p{font-size:2em;}
+
+/*Phone RWD*/
+#hamIcon{display:none;}
+@media screen and (max-width:800px){
+	/*make a menu items vertical*/
+	 nav ul li{display:block;}
+	 
+	/* unhide menu icon */
+	 #hamIcon{display:block;}
+
+	/*hide the menu item list*/
+	 nav ul{display:none;}
+	 
+	#dustId , #dust2Id , #dust3Id{position: relative;width:10vw;}/*GameCharacter*/
+	.dustEnemy{width:100%;height:auto;}
+
+    .GameborderBox{
+        width:95%;
+        height:400px;
+    }
+}
+
+/*to unhide menu items*/
+.menuShow{display:block;}
