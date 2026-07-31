@@ -324,7 +324,8 @@ btnFS.addEventListener("click",enterFullscreen);
 btnWS.addEventListener("click",exitFullscreen);
 
 function enterFullscreen() {
-	document.querySelector(".GameborderBox").requestFullscreen();
+	if (document.querySelector(".GameborderBox").webkitRequestFullscreen) { // Chrome, Safari, and Opera
+		document.querySelector(".GameborderBox").webkitRequestFullscreen();
 }
 function exitFullscreen() {
 	document.exitFullscreen();
