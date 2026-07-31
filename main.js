@@ -93,8 +93,8 @@ let maxY;
 
 //offsetWidth , offsetHeight => return the total layout width and height of an HTML element in pixels.
 function updateGameSize(){
-    maxX = gameborder.offsetWidth - 100;
-    maxY = gameborder.offsetHeight - 100;
+    maxX = gameborder.offsetWidth - 150;
+    maxY = gameborder.offsetHeight - 150;
 }
 
 window.addEventListener("resize", updateGameSize);//window -> browser screen size
