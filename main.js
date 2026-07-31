@@ -312,7 +312,7 @@ function CheckAns(){
 	if(q5.value=="mid 1950s")quizscore++;
 	
 	
-	scorebox.innerHTML="Score:"+quizscore;
+	scorebox.innerHTML="You got "+quizscore;
 
 }
 
