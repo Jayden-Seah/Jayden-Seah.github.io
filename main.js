@@ -206,7 +206,7 @@ function cleanDust2() {
 	win();
 	
 	cleanAudio.play(); //play the audio!
-	dust2Id.src = "images/clean-stars.png";
+	dust2Id.src = "images/clean-stars.png";//Has a white bg to make it easier to see
 	dust2Id.classList.add("animate");	
 
 	setTimeout(function(){dust2Id.src = "images/dust-clear.png";dust2Id.classList.remove("animate");MoveDust2(); },500);
@@ -312,7 +312,7 @@ function CheckAns(){
 	if(q5.value=="mid 1950s")quizscore++;
 	
 	
-	scorebox.innerHTML="You got "+quizscore;
+	scorebox.innerHTML="You scored "+quizscore;
 
 }
 
