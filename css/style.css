@@ -118,6 +118,8 @@ footer img{vertical-align:top}
         width:95%;
         height:400px;
     }
+	
+	footer img{display:none}
 }
 
 /*to unhide menu items*/
