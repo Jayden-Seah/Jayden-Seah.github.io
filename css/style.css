@@ -40,10 +40,12 @@ section.page h2{text-align:center;}
 section#page3{background:#222A35}
 
 /*Tips*/
+#page4 {text-align:center}
+
 .tipsbtn{background:#2F6BFF;border-radius:1em;transition: transform 0.3s ease;} /*Tipsbtn*/
 .tipsbtn:hover{background:#1FB6FF;transform: scale(1.1);}
 
-
+#page4 img{width:100%;max-width:800px;height:auto;display:block;margin:auto;} /*make the images on the tips page responsive(display:block + margin:auto -> centers the image)*/
 
 /*GamePage*/
 /*position:relative helps the dust to move better*/
@@ -95,6 +97,7 @@ fieldset label:hover{background:#2856CC;transform:scale(1.02);}
 /*Footer*/
 footer{background:#222A35;font-size:0.5em;margin:0.5em}
 footer p{font-size:2em;}
+footer img{vertical-align:top}
 
 /*Phone RWD*/
 #hamIcon{display:none;}
